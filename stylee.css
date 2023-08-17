@@ -1,0 +1,576 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+   body {
+       height: 100vh;
+       width: 100%;
+       background-color: #f2f2f2;
+   }
+   /* Navbar */
+   
+   nav {
+       height: 70px;
+       width: 100%;
+       display: flex;
+       background-color: white;
+   }
+   
+   .nav-left {
+       width: 50%;
+       /* background-color: #daf223; */
+       margin-left: 5%;
+       display: flex;
+       align-items: center;
+       justify-content: left;
+       gap: 10px;
+       font-size: 24px;
+   }
+   
+   .nav-right {
+       width: 50%;
+       /* background-color: #e1eb91;
+       margin-right: 5%; */
+       display: flex;
+       align-items: center;
+       justify-content: right;
+       & img {
+           width: 30px;
+           margin-right: 10px;
+       }
+       margin-right:5%;
+   }
+   
+   #microsoft-account {
+       margin-right: 15px;
+   }
+   
+   #user-account {
+       margin-left: 15px;
+       margin-right: 10px;
+   }
+   
+   #Rewards {
+       margin-left: 13px;
+   }
+   
+   #Microsoft {
+       margin-right: 13px;
+       margin-left: 5px;
+   }
+   /* userData */
+   
+   .userdata {
+       height: 50%;
+       background-color: #ccf5f9;
+       width: 100%;
+   }
+   
+   .user-level {
+       width: 100%;
+       height: 50%;
+       font-size: 34px;
+       padding-left: 5%;
+       padding-top: 3%;
+       font-weight: 500;
+       & #level {
+           font-size: 20px;
+           font-weight: normal;
+       }
+       & img {
+           width: 15px;
+           margin-left: 10px;
+       }
+   }
+   
+   .user-points {
+       width: 100%;
+       height: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 20%;
+   }
+   
+   .p-card {
+       width: 270px;
+       height: 130px;
+       border-radius: 10px;
+       overflow: hidden;
+   }
+   
+   .upper {
+       width: 100%;
+       height: 70%;
+       display: flex;
+       & img {
+           width: 20%;
+           height: 100%;
+           padding: 1px;
+       }
+   }
+   
+   .upper:hover {
+       background-color: #fff;
+       border-radius: 10px;
+   }
+   
+   .ava-dtl {
+       & img {
+           width: 15px;
+           height: 15px;
+           margin-left: 5px;
+       }
+       margin-left:10px;
+       margin-top:10px;
+   }
+   
+   #total-points {
+       font-size: 30px;
+       font-weight: 500;
+   }
+   /* Reedem Status */
+   
+   .user-status {
+       background-color: #bede56;
+       height: 10%;
+   }
+   /* main heading contains images */
+   
+   .header-sec {
+       height: 75%;
+       overflow: hidden;
+       display: flex;
+   }
+   
+   .header-img {
+       width: 50%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       & img {
+           width: 100%;
+           height: 120%;
+       }
+   }
+   
+   .header-info {
+       width: 50%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding-left: 5%;
+       background-color: white;
+       & h1 {
+           font-size: 24px;
+           width: auto;
+           padding-bottom: 10px;
+       }
+       & p {
+           font-size: 15px;
+           padding-bottom: 20px;
+       }
+       & button {
+           width: 120px;
+           height: 40px;
+           font-size: 17px;
+           padding: 0;
+           background-color: black;
+           color: white;
+       }
+   }
+   
+   .width-margin {
+       width: 90%;
+       margin: 0 auto;
+   }
+   /* daily tasks to get rewards */
+   
+   .puzzels {
+       display: flex;
+       height: auto;
+       /* background-color: #c6a4e4; */
+       flex-wrap: wrap;
+       margin-top: 50px;
+       align-items: center;
+       gap: 2%;
+   }
+   
+   .puzzel-common {
+       background-color: #fdfdfd;
+       width: 23.5%;
+       height: 400px;
+       margin-bottom: 2%;
+       padding: 20px;
+   }
+   
+   .card1 {
+       width: 49%;
+       /* background-color: #1c65ed; */
+   }
+   /* puzzel-card image design */
+   
+   .p-card-animation {
+       width: 100%;
+       height: 45%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       & img {
+           width: 140px;
+       }
+   }
+   /* card-detail-section */
+   
+   .p-card-detail {
+       position: relative;
+       height: 55%;
+   }
+   
+   .p-card-heading {
+       padding: 10px 0;
+       text-align: center;
+       font-weight: bold;
+       font-size: 17px;
+   }
+   
+   .p-card-info {
+       text-align: center;
+       padding: 20px 0;
+       font-size: 15px;
+   }
+   
+   .p-card-link {
+       width: 100%;
+       position: absolute;
+       text-align: center;
+       bottom: 10px;
+       color: #485cda;
+   }
+   /* Reward History of User */
+   
+   .reward-history {
+       height: auto;
+       display: flex;
+       flex-wrap: wrap;
+       gap: 2%;
+       margin-top: 50px;
+   }
+   
+   .reward-common {
+       width: 49%;
+       height: 150px;
+       display: flex;
+       flex-wrap: wrap;
+   }
+   
+   .reward-history-logo {
+       background-color: #e93ebc;
+       width: 150px;
+       height: 100%;
+       & img {
+           width: 120px;
+       }
+   }
+   
+   .reward-history-info {
+       width: 70%;
+       height: 100%;
+       background-color: #b7e07e;
+       padding: 10px;
+       & .reward-heading {
+           background-color: #fff;
+           font-weight: bold;
+           font-size: 17px;
+           padding: 2px;
+           margin-bottom: 10px;
+       }
+       & .progress-bar1 {
+           background-color: #fff;
+           height: 12px;
+           margin-top: 10px;
+           border-radius: 5px;
+           margin-bottom: 10px;
+       }
+       p {
+           margin-bottom: 10px;
+           background-color: #e98f22;
+           font-size: 15px;
+       }
+   }
+   
+   .progress-percent {
+       height: 100%;
+       background-color: yellow;
+       width: 40%;
+       border-radius: 5px;
+   }
+   /* Rewards which can be reedomed */
+   
+   .suggested-rewards {
+       height: auto;
+       background-color: #dd3996;
+       margin-top: 50px;
+       display: flex;
+       gap: 2%;
+   }
+   
+   .s-rewards-common {
+       width: 25%;
+       height: 55vh;
+       background-color: #1aeb9e;
+   }
+   /* Footer section */
+   
+   footer {
+       width: 100%;
+       height: 70vh;
+       background-color: #dc1919;
+       margin-top: 50px;
+   }
+   /* puzzel-card designing */
+   /* ---------------------------mediaquery------------------------------------------------*/
+   
+   @media (min-width:760px) and (max-width: 1076px) {
+       /* responsive puzzel-card */
+       .puzzel-common {
+           width: 32%;
+       }
+       .card1 {
+           width: 66%;
+       }
+       /* -------------------------------------- */
+   }
+   
+   @media (min-width:541px) and (max-width:759px) {
+       /* responsive puzzel-card */
+       .puzzel-common {
+           width: 49%;
+       }
+       .card1 {
+           width: 100%;
+       }
+       /* -------------------------------------- */
+       /* header-section*/
+       .header-sec {
+           flex-direction: column-reverse;
+           height: auto;
+           flex-wrap: wrap;
+       }
+       .header-info {
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           height: 300px;
+           align-items: center;
+           background-color: #d5cfcf;
+           & h1 {
+               font-size: 24px;
+               width: auto;
+               padding-bottom: 10px;
+           }
+           & p {
+               font-size: 15px;
+               padding-bottom: 15px;
+           }
+           & button {
+               width: 120px;
+               height: 40px;
+               font-size: 17px;
+               padding: 0;
+               background-color: black;
+               color: white;
+           }
+       }
+       .header-img {
+           width: 100%;
+           height: 300px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           & img {
+               width: 100%;
+               height: 100%;
+           }
+       }
+   }
+   /* mobile _responsive*/
+   
+   @media (max-width:541px) {
+       /* responsive puzzel-card */
+       .puzzel-common {
+           width: 100%;
+           display: flex;
+           height: 150px;
+           padding: 10px;
+       }
+       .p-card-animation {
+           width: 20%;
+           height: 100%;
+       }
+       .p-card-detail {
+           width: 80%;
+           height: 100%;
+           padding-left: 5px;
+       }
+       .p-card-heading {
+           width: 100%;
+           height: 25%;
+           padding-bottom: 0;
+           text-align: left;
+           font-weight: bold;
+           font-size: 17px;
+           /* display: flex;
+            justify-content: center;
+            align-items: center; */
+       }
+       .p-card-info {
+           width: 100%;
+           height: 50%;
+           display: flex;
+           justify-content: center;
+           text-align: left;
+           font-size: 15px;
+           padding: 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .p-card-link {
+           text-align: center;
+           height: 25%;
+           width: 100%;
+           text-align: left;
+           position: relative;
+           bottom: 0;
+       }
+       .p-card-animation img {
+           width: 80px;
+       }
+       /* -------------------------------------- */
+       .reward-history {
+           height: auto;
+           display: flex;
+           margin-top: 150px;
+           width: 100%;
+           flex-direction: column;
+           background-color: red;
+       }
+       .reward-history-info {
+           display: flex;
+           flex-direction: row;
+           width: 70%;
+       }
+       /* -------------------------------------- */
+       /* header-section*/
+       /* header-section*/
+       .header-sec {
+           flex-direction: column-reverse;
+           height: auto;
+           flex-wrap: wrap;
+       }
+       .header-info {
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           height: 300px;
+           align-items: center;
+           background-color: #d5cfcf;
+           & h1 {
+               font-size: 24px;
+               width: auto;
+               padding-bottom: 10px;
+           }
+           & p {
+               font-size: 15px;
+               padding-bottom: 15px;
+           }
+           & button {
+               width: 120px;
+               height: 40px;
+               font-size: 17px;
+               padding: 0;
+               background-color: black;
+               color: white;
+           }
+       }
+       .header-img {
+           width: 100%;
+           height: 300px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           & img {
+               width: 100%;
+               height: 100%;
+           }
+       }
+       .p-card {
+           width: 40%;
+           height: 90%;
+           border-radius: 5px;
+           overflow: hidden;
+           padding: 5px;
+           font-size: 15px;
+           align-items: center;
+           justify-content: center;
+       }
+       .user-points {
+           width: 100%;
+           height: 40%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap: 8%;
+           background-color: #0d13ca;
+       }
+   }
+   /*mediaQuery for navbar*/
+   
+   @media (max-width:759px) {
+       #microsoft-account {
+           display: none;
+       }
+       #user-account {
+           display: none;
+       }
+       #danda {
+           display: none;
+       }
+       #Microsoft {
+           font-size: 20px;
+       }
+       #Rewards {
+           font-size: 20px;
+       }
+       .nav-left {
+           width: 80%;
+       }
+       .nav-right {
+           width: 20%;
+       }
+       #danda1 {
+           font-size: 20px;
+       }
+   }
+   /*----------------------------------------------- utility classes----------------------------------- */
+   
+   .centre {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .link {
+       color: #485cda;
+   }
+   
+   .info-logo {
+       width: 15px;
+       margin-left: 10px;
+   }
